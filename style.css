@@ -1,0 +1,38 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0; padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+:root {
+  --bg: #f9fff9;
+  --text: #0c3;
+  --accent: #d4af37;
+}
+header {
+  display: flex; justify-content: space-between;
+  align-items: center; padding: 1rem 2rem;
+  background: var(--accent);
+  color: white;
+}
+.theme-hotbar button {
+  background: transparent; border: none;
+  font-size: 1.5rem; cursor: pointer;
+}
+.card {
+  margin: 1.5rem auto; padding: 1.5rem;
+  max-width: 700px; background: white;
+  border: 2px solid var(--accent);
+  border-radius: 1rem;
+}
+.table-form input, .table-form button {
+  margin: 0.3rem; padding: 0.5rem;
+}
+.export-btns { text-align: center; margin-top: 1rem; }
+#loading-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(255,255,255,0.9);
+  color: #333; font-size: 1.2rem;
+  align-items: center; justify-content: center;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nabung Aniv 💚</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body> ini
+  <header>
+    <h1>💚 Nabung Aniv</h1>
+    <div class="theme-hotbar">
+      <button data-theme="pink">🌸</button>
+      <button data-theme="green">💚</button>
+      <button data-theme="blue">💙</button>
+      <button data-theme="cream">☀️</button>
+      <input type="color" id="customColor" title="Pilih warna bebas" />
+    </div>
+  </header>
+
+  <main id="app">
+    <section id="input-card" class="card">
+      <h2>Input Tabungan</h2>
+      <div class="table-form">
+        <input id="bulan" placeholder="Bulan">
+        <input id="mas" placeholder="Mas">
+        <input id="adek" placeholder="Adek">
+        <input id="total" placeholder="Total" readonly>
+        <button id="simpan">Simpan</button>
+      </div>
+    </section>
+
+    <section id="grafik-card" class="card">
+      <h2>Progres Tabungan</h2>
+      <canvas id="grafik"></canvas>
+      <div class="export-btns">
+        <button id="exportExcel">📊 Export Excel</button>
+        <button id="exportPDF">📄 Export PDF</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="loading-overlay">Memuat data dari Cloudflare...</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
